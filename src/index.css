@@ -1,3 +1,20 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.BannerContainer::-webkit-scrollbar{
+    display: none;
+}
+
+.bannerData{
+    background: linear-gradient(67deg, rgba(0, 0, 0, 0.707) 0%, rgba(0,0,0,0.0033263305322128733) 100%);
+}
+
+.line-clamp {
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal; /* Ensure text wraps properly */
+    max-height: 12rem; /* Set max height to constrain text within the div */
+    line-height: 1.5rem; /* Set a line height for proper spacing */
+  }
