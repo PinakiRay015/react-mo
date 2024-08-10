@@ -33,7 +33,7 @@ const Banner = ({ BASE_URL, API_KEY }) => {
   };
 
   return (
-    <section className="relative h-screen">
+    <section className="relative h-100vh">
       <i
         onClick={leftScroll}
         className="absolute top-[50%] text-white text-5xl z-10 cursor-pointer"
@@ -48,7 +48,7 @@ const Banner = ({ BASE_URL, API_KEY }) => {
               <img
                 src={`https://image.tmdb.org/t/p/original/${Element.backdrop_path}`}
                 alt=""
-                className="w-screen h-full object-cover"
+                className="w-screen h-screen object-cover"
               />
               {/* Banner data */}
               <div className="bannerData absolute top-0 h-screen left-0 w-full text-white flex items-center">
