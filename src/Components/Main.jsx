@@ -19,7 +19,7 @@ const Main = () => {
       <TopRated BASE_URL={BASE_URL} API_KEY = {API_KEY}  />
       <PopularCast BASE_URL={BASE_URL} API_KEY = {API_KEY}/>
       {/* <WatchProviders BASE_URL={BASE_URL} API_KEY = {API_KEY} /> */}
-      <Genres BASE_URL={BASE_URL} API_KEY = {API_KEY}/>
+      <Genres slides={9}/>
     </div>
   )
 }
