@@ -31,3 +31,8 @@ body{
   .latestMovies::-webkit-scrollbar{
     display: none;
   }
+
+  .g-box{
+    min-width: 15vw;
+    flex: 1 0 11vw;
+  }
