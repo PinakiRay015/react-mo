@@ -33,17 +33,17 @@ const Banner = ({ BASE_URL, API_KEY }) => {
   };
 
   return (
-    <section className="relative h-100vh">
+    <section className="relative h-100vh overflow-y-hidden">
       <i
         onClick={leftScroll}
         className="absolute top-[50%] text-white text-5xl z-10 cursor-pointer"
       >
         <CiCircleChevLeft />
       </i>
-      <div className="BannerContainer overflow-x-auto whitespace-nowrap h-full">
+      <div className="BannerContainer flex overflow-x-auto whitespace-nowrap h-full">
         {trendingLists.map((Element, id) => {
           return (
-            <div key={id} className="inline-block relative h-full">
+            <div key={id} className="relative min-w-[100%] h-full">
               {/* Banner image */}
               <img
                 src={`https://image.tmdb.org/t/p/original/${Element.backdrop_path}`}

@@ -19,12 +19,12 @@
 
     return (
       <div className='' >
-        <h1 className='font-bold text-2xl px-1 text-white py-2' >Latest in Movies</h1>
+        <h1 className='font-semibold text-2xl px-1 text-white py-2' >Latest in Movies</h1>
         <div className='w-[88vw] mx-auto' >
         <div className='latestMovies flex gap-3 px-1 overflow-x-auto' >
         {movies.map((Element , id)=>{
           return(
-              <img className='w-28 rounded-md cursor-pointer'  src={`https://image.tmdb.org/t/p/w500/${Element.poster_path}`} alt="" />
+              <img key={id} className='w-28 rounded-md cursor-pointer'  src={`https://image.tmdb.org/t/p/w500/${Element.poster_path}`} alt="" />
           )
         })}
         </div>

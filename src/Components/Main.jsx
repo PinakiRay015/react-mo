@@ -1,6 +1,9 @@
 import React from 'react'
 import Banner from './Banner'
 import LatestMovies from './LatestMovies'
+import TopRated from './TopRated'
+import PopularCast from './PopularCast'
+import WatchProviders from './WatchProviders'
 const Main = () => {
 
     const BASE_URL = 'https://api.themoviedb.org/3/'
@@ -10,6 +13,9 @@ const Main = () => {
     <div className='pl-[10vw] overflow-x-hidden bg-[#0d1b2a]' >
       <Banner BASE_URL={BASE_URL} API_KEY = {API_KEY} />
       <LatestMovies BASE_URL={BASE_URL} API_KEY = {API_KEY} />
+      <TopRated BASE_URL={BASE_URL} API_KEY = {API_KEY}  />
+      <PopularCast BASE_URL={BASE_URL} API_KEY = {API_KEY}/>
+      <WatchProviders BASE_URL={BASE_URL} API_KEY = {API_KEY} />
     </div>
   )
 }
