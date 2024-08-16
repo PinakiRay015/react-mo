@@ -1,4 +1,5 @@
 import React , {useState , useEffect} from 'react'
+import { CiCircleChevLeft, CiCircleChevRight } from "react-icons/ci";
 
 const PopularShows = ({BASE_URL , API_KEY}) => {
 
@@ -17,16 +18,35 @@ const PopularShows = ({BASE_URL , API_KEY}) => {
     useEffect(()=>{
         getPopular();
     },[])
+
+    const scrollLeft = () => {
+      const popularShows = document.querySelector(".popularShows");
+      popularShows.scrollBy({ left: -300, behavior: "smooth" });
+    };
+  
+    const scrollRight = () => {
+      const popularShows = document.querySelector(".popularShows");
+      popularShows.scrollBy({ left: 300, behavior: "smooth" });
+    };
+
   return (
     <div>
       <h1 className='text-white text-2xl font-semibold py-2 px-1' >Popular in Tv shows</h1>
       <div className='w-[88vw] mx-auto' >
-        <div className='latestMovies flex gap-3 px-1 overflow-x-auto' >
+        <div className='flex justify-between items-center' >
+        <p onClick={scrollLeft} className="text-white font-bold text-3xl">
+            <CiCircleChevLeft />
+          </p>
+        <div className='popularShows flex gap-3 px-1 overflow-x-auto' >
             {popular.map((Element , id)=>{
                 return(
               <img key={id} className='w-28 rounded-md cursor-pointer'  src={`https://image.tmdb.org/t/p/w500/${Element.poster_path}`} alt="" />
                 )
             })}
+        </div>
+        <p onClick={scrollRight} className="text-white font-bold text-3xl">
+            <CiCircleChevRight />
+          </p>
         </div>
         </div>
     </div>
