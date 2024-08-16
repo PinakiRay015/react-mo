@@ -7,6 +7,7 @@ import WatchProviders from './WatchProviders'
 import PopularMovies from './PopularMovies'
 import Genres from './Genres'
 import PopularShows from './PopularShows'
+import TopRatedShows from './TopRatedShows'
 const Main = () => {
 
     const BASE_URL = 'https://api.themoviedb.org/3/'
@@ -23,6 +24,7 @@ const Main = () => {
       <Genres starting={0} ending={9}/>
       <PopularShows BASE_URL={BASE_URL} API_KEY = {API_KEY} />
       <Genres starting={9} ending={19}/>
+      <TopRatedShows BASE_URL={BASE_URL} API_KEY = {API_KEY} />
     </div>
   )
 }

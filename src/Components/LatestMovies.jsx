@@ -1,4 +1,5 @@
   import React , {useState , useEffect} from 'react'
+import { CiCircleChevLeft, CiCircleChevRight } from "react-icons/ci";
   const LatestMovies = ({BASE_URL , API_KEY}) => {
     const [movies , setMovies] = useState([]);
 
@@ -17,10 +18,24 @@
       getLatestMovies();
     },[])
 
+    const scrollLeft = () => {
+      const latestMovies = document.querySelector(".latestMovies");
+      latestMovies.scrollBy({ left: -300, behavior: "smooth" });
+    };
+  
+    const scrollRight = () => {
+      const latestMovies = document.querySelector(".latestMovies");
+      latestMovies.scrollBy({ left: 300, behavior: "smooth" });
+    };
+
     return (
       <div className='' >
         <h1 className='font-semibold text-2xl px-1 text-white py-2' >Latest in Movies</h1>
         <div className='w-[88vw] mx-auto' >
+          <div className='flex justify-between items-center' >
+          <p onClick={scrollLeft} className="text-white font-bold text-3xl">
+            <CiCircleChevLeft />
+          </p>  
         <div className='latestMovies flex gap-3 px-1 overflow-x-auto' >
         {movies.map((Element , id)=>{
           return(
@@ -28,6 +43,10 @@
           )
         })}
         </div>
+        <p onClick={scrollRight} className="text-white font-bold text-3xl">
+            <CiCircleChevRight />
+          </p>
+          </div>
         </div>
       </div>
     )
