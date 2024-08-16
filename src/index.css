@@ -36,7 +36,8 @@ body {
 .topRatedMovies::-webkit-scrollbar,
 .popularCast::-webkit-scrollbar,
 .popularShows::-webkit-scrollbar,
-.topRatedShows::-webkit-scrollbar {
+.topRatedShows::-webkit-scrollbar,
+.airingToday::-webkit-scrollbar {
   display: none;
 }
 
