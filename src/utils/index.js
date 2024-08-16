@@ -1,98 +1,118 @@
+import action from '../assets/action.jpg'
+import adventure from '../assets/adventure.jpg'
+import anime from '../assets/anime.jpg'
+import comedy from '../assets/comedy.jpg'
+import crime from '../assets/crime.jpg'
+import documentary from '../assets/documentary.jpg'
+import drama from '../assets/drama.jpg'
+import family from '../assets/family.jpg'
+import fantasy from '../assets/fantasy.jpg'
+import history from '../assets/history.jpg'
+import horror from '../assets/horror.jpg'
+import music from '../assets/music.jpg'
+import mystery from '../assets/mystery.jpg'
+import romance from '../assets/romance.jpg'
+import scifi from '../assets/scifi.jpg'
+import series from '../assets/series.jpg'
+import thriller from '../assets/thriller.jpg'
+import war from '../assets/war.jpg'
+import western from '../assets/western.jpg'
+
 export const genres = [
     {
       id: 28,
       name: "Action",
-      color: "#B22222", // Dark Red
+      imgage : action, // Dark Red
     },
     {
       id: 12,
       name: "Adventure",
-      color: "#006400", // Dark Green
+      imgage : adventure, // Dark Green
     },
     {
       id: 16,
       name: "Animation",
-      color: "#483D8B", // Dark Slate Blue
+      imgage : anime, // Dark Slate Blue
     },
     {
       id: 35,
       name: "Comedy",
-      color: "#556B2F", // Dark Olive Green
+      imgage : comedy, // Dark Olive Green
     },
     {
       id: 80,
       name: "Crime",
-      color: "#8B0000", // Dark Red
+      imgage : crime, // Dark Red
     },
     {
       id: 99,
       name: "Documentary",
-      color: "#2F4F4F", // Dark Slate Gray
+      imgage : documentary, // Dark Slate Gray
     },
     {
       id: 18,
       name: "Drama",
-      color: "#8B4513", // Saddle Brown
+      imgage : drama, // Saddle Brown
     },
     {
       id: 10751,
       name: "Family",
-      color: "#2E8B57", // Sea Green
+      imgage : family, // Sea Green
     },
     {
       id: 14,
       name: "Fantasy",
-      color: "#4B0082", // Indigo
+      imgage : fantasy, // Indigo
     },
     {
       id: 36,
       name: "History",
-      color: "#8B4513", // Saddle Brown
+      imgage : history, // Saddle Brown
     },
     {
       id: 27,
       name: "Horror",
-      color: "#2C2C2C", // Dark Charcoal
+      imgage : horror, // Dark Charcoal
     },
     {
       id: 10402,
       name: "Music",
-      color: "#8B008B", // Dark Magenta
+      imgage : music, // Dark Magenta
     },
     {
       id: 9648,
       name: "Mystery",
-      color: "#191970", // Midnight Blue
+      imgage : mystery, // Midnight Blue
     },
     {
       id: 10749,
       name: "Romance",
-      color: "#800000", // Maroon
+      imgage : romance, // Maroon
     },
     {
       id: 878,
       name: "Science Fiction",
-      color: "#2F4F4F", // Dark Slate Gray
+      imgage : scifi, // Dark Slate Gray
     },
     {
       id: 10770,
       name: "TV Movie",
-      color: "#6B8E23", // Olive Drab
+      imgage : series, // Olive Drab
     },
     {
       id: 53,
       name: "Thriller",
-      color: "#8B0000", // Dark Red
+      imgage : thriller, // Dark Red
     },
     {
       id: 10752,
       name: "War",
-      color: "#2F4F4F", // Dark Slate Gray
+      imgage : war, // Dark Slate Gray
     },
     {
       id: 37,
       name: "Western",
-      color: "#A0522D", // Sienna
+      imgage : western, // Sienna
     },
   ];
   
