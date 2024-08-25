@@ -9,6 +9,7 @@ import Genres from './Genres'
 import PopularShows from './PopularShows'
 import TopRatedShows from './TopRatedShows'
 import AiringToday from './AiringToday'
+import Footer from './Footer'
 const Main = () => {
 
     const BASE_URL = 'https://api.themoviedb.org/3/'
@@ -27,6 +28,7 @@ const Main = () => {
       <Genres starting={9} ending={19}/>
       <TopRatedShows BASE_URL={BASE_URL} API_KEY = {API_KEY} />
       <AiringToday BASE_URL={BASE_URL} API_KEY = {API_KEY} />
+      <Footer/>
     </div>
   )
 }
