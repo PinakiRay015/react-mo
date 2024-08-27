@@ -7,7 +7,11 @@ import Television from './Components/Television/Television'
 import Radio from './Components/Radio/Radio'
 import Sports from './Components/Sports/Sports'
 import Category from './Components/Category/Category'
+import MovieDes from './Components/Movie description/MovieDes'
 const App = () => {
+
+      const BASE_URL = 'https://api.themoviedb.org/3/'
+    const API_KEY = '376a7b56bf7b28c1457c230c2ebbd63a'
 
   const myRouters = createBrowserRouter([
     {
@@ -34,6 +38,10 @@ const App = () => {
       path: '/category',
       element: <><Aside/><Category/></>
     },
+    {
+      path:'/movie/:id',
+      element:<><Aside/><MovieDes BASE_URL={BASE_URL} API_KEY = {API_KEY} /></>
+    }
   ])
 
   return (
