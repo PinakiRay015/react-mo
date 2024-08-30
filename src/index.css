@@ -51,3 +51,25 @@ body {
 {
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.94) 40%, rgba(0,0,0,0.0033263305322128733) 100%);
 }
+
+/* .production{
+  position: relative;
+  display: inline-block;
+}
+
+.production::after
+{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: white;
+  mix-blend-mode: lighten;
+  pointer-events: none;
+}
+
+.production img{
+    display: block;
+} */

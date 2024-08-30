@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { CiCircleChevLeft, CiCircleChevRight } from "react-icons/ci";
+import { Link } from "react-router-dom";
 const TopRated = ({ BASE_URL, API_KEY }) => {
   const [topMovies, setTopMovies] = useState([]);
   const getTopMovies = async () => {
@@ -41,12 +42,16 @@ const TopRated = ({ BASE_URL, API_KEY }) => {
           <div className="topRatedMovies flex gap-3 px-1 overflow-x-auto">
             {topMovies.map((Element, id) => {
               return (
+
+                <Link to={`movie/${Element.id}`} >
+                
                 <img
                   key={id}
-                  className="w-28 rounded-md cursor-pointer"
+                  className="min-w-28 rounded-md cursor-pointer"
                   src={`https://image.tmdb.org/t/p/w500/${Element.poster_path}`}
                   alt=""
                 />
+                </Link>
               );
             })}
           </div>

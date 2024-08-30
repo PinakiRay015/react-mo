@@ -168,7 +168,7 @@ const MovieDes = ({ BASE_URL, API_KEY }) => {
 
       {/* main section  */}
 
-      <main className="px-8 py-4 bg-[#1E1E1E]">
+      <main className="px-8 py-4 bg-black">
         {/* production section  */}
         <section className="pb-10">
           <header className="flex items-end justify-between">
@@ -176,12 +176,12 @@ const MovieDes = ({ BASE_URL, API_KEY }) => {
             <p className="text-sm text-amber-600">See more</p>
           </header>
 
-          <div className="flex gap-14 py-4">
+          <div className="production flex gap-14 py-4">
             {productionCompanies.map((Element, id) => {
               return Element.logo_path ? (
                 <img
                   key={id}
-                  className="h-12 "
+                  className="h-12 grayscale invert"
                   src={`https://image.tmdb.org/t/p/w500/${Element.logo_path}`}
                   alt=""
                 />
