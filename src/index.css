@@ -37,7 +37,8 @@ body {
 .popularCast::-webkit-scrollbar,
 .popularShows::-webkit-scrollbar,
 .topRatedShows::-webkit-scrollbar,
-.airingToday::-webkit-scrollbar {
+.airingToday::-webkit-scrollbar,
+.similarMovies::-webkit-scrollbar {
   display: none;
 }
 
@@ -48,5 +49,5 @@ body {
 
 .detail-section
 {
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.932) 40%, rgba(0,0,0,0.0033263305322128733) 100%);
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.94) 40%, rgba(0,0,0,0.0033263305322128733) 100%);
 }
