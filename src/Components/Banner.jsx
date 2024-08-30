@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { CiCircleChevLeft, CiCircleChevRight } from "react-icons/ci";
-
+import { Link } from "react-router-dom";
 const Banner = ({ BASE_URL, API_KEY }) => {
   const [trendingLists, setTrendingLists] = useState([]);
 
@@ -69,7 +69,9 @@ const Banner = ({ BASE_URL, API_KEY }) => {
                     </p>
                   </div>
                   <div className="buttons flex gap-3">
+                    <Link to={`${Element.media_type}/${Element.id}`} >
                     <button className="rounded bg-amber-500 w-60 px-5 py-2 text-black font-semibold" >Suscribe to watch</button>
+                    </Link>
                     <button className="rounded bg-amber-500 w-12 px-5 py-2 text-black font-semibold" >+</button>
                   </div>
                 </div>

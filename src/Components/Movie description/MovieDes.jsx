@@ -46,6 +46,8 @@ const MovieDes = ({ BASE_URL, API_KEY }) => {
     <div className="w-[100vw] pl-[10vw] h-screen overflow-x-hidden">
       {/* hero-section  */}
       <div className="hero-section h-screen relative">
+
+        {/* backdrop image path  */}
         <div className="background-section h-screen absolute inset-0">
           <img
             className="w-full h-full object-cover"

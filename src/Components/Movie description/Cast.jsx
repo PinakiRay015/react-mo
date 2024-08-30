@@ -1,5 +1,5 @@
 import { data } from "autoprefixer";
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState , } from "react";
 
 const Cast = ({ MovieId, BASE_URL, API_KEY , toggleCast }) => {
   const [cast, setCast] = useState([]);

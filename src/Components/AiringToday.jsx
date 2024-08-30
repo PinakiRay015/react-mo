@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { CiCircleChevLeft, CiCircleChevRight } from "react-icons/ci";
+import { Link } from "react-router-dom";
 
 const AiringToday = ({ BASE_URL, API_KEY }) => {
   const [airing, setAiring] = useState([]);
@@ -42,12 +43,14 @@ const AiringToday = ({ BASE_URL, API_KEY }) => {
           <div className="airingToday flex gap-3 px-1 overflow-x-auto w-[84vw]">
             {airing.map((Element, id) => {
                 return(
-                    <img
-                    key={id}
-                    className="w-28 rounded-md cursor-pointer"
-                    src={`https://image.tmdb.org/t/p/w500/${Element.poster_path}`}
-                    alt=""
-                  />
+                  <Link to={`tv/${Element.id}`} >
+                  <img
+                  key={id}
+                  className="min-w-28 rounded-md cursor-pointer"
+                  src={`https://image.tmdb.org/t/p/w500/${Element.poster_path}`}
+                  alt=""
+                />
+                  </Link>
                 )
             })}
           </div>

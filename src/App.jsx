@@ -8,6 +8,7 @@ import Radio from './Components/Radio/Radio'
 import Sports from './Components/Sports/Sports'
 import Category from './Components/Category/Category'
 import MovieDes from './Components/Movie description/MovieDes'
+import TvDes from './Components/Tv show descripton/TvDes'
 const App = () => {
 
       const BASE_URL = 'https://api.themoviedb.org/3/'
@@ -41,6 +42,10 @@ const App = () => {
     {
       path:'/movie/:id',
       element:<><Aside/><MovieDes BASE_URL={BASE_URL} API_KEY = {API_KEY} /></>
+    },
+    {
+      path :'/tv/:id',
+      element:<><Aside/><TvDes BASE_URL={BASE_URL} API_KEY = {API_KEY} /></>
     }
   ])
 
