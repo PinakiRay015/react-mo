@@ -90,8 +90,13 @@ const TvDes = ({ BASE_URL, API_KEY }) => {
                 </div>
               </div>
 
+              {/* overview section  */}
+              <div className="py-7">
+                <p className="text-zinc-400">{getDetails.overview == "" ? "overview not available currently" : getDetails.overview}</p>
+              </div>
+
               {/* analytics part  */}
-              <div className="grid grid-cols-2 gap-4">
+              <div className="grid grid-cols-4 gap-4">
                 {/* imdb rating part  */}
                 <div className="w-12 mt-4 flex items-end gap-2">
                   <div>
@@ -100,7 +105,7 @@ const TvDes = ({ BASE_URL, API_KEY }) => {
                       value={`${Math.floor(getDetails.vote_average) * 10}`} // Adjust value calculation if needed
                       text={`${getDetails.vote_average}`.substring(0, 3)} // Display text
                       styles={buildStyles({
-                        rotation: 0.25, // Starts at 12 o'clock
+                        rotation: 0.0, // Starts at 12 o'clock
                         strokeLinecap: "butt", // Round ends of the path
                         textSize: "32px",
                         pathTransitionDuration: 0.5, // Animation duration

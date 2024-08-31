@@ -131,7 +131,7 @@ const MovieDes = ({ BASE_URL, API_KEY }) => {
                       value={`${Math.floor(getDetails.vote_average) * 10}`} // Adjust value calculation if needed
                       text={`${getDetails.vote_average}`.substring(0, 3)} // Display text
                       styles={buildStyles({
-                        rotation: 0.25, // Starts at 12 o'clock
+                        rotation: 0.0, // Starts at 12 o'clock
                         strokeLinecap: "butt", // Round ends of the path
                         textSize: "32px",
                         pathTransitionDuration: 0.5, // Animation duration
